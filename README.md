@@ -37,5 +37,22 @@ Contains the **120 experiment rounds**, divided into:
 - ☁️✅ **With_cloud_With_IRAS-IoT** → 30 rounds in a Fog-Cloud environment, IRAS-IoT enabled.  
 
 
+🧪 04 - mlp_testing_algorithm
 
+This directory includes the algorithm used to test the previously trained MLP model, aiming to evaluate the model’s accuracy and predictive performance.
+
+🏋️‍♂️ 05 - mlp_training_algorithm
+
+This directory includes the algorithm used to train the MLP model, selecting and processing the appropriate training data.
+
+
+⚡ 06 - workload_script
+
+Contains the scripts used to emulate workload generation during container creation and execution.
+
+⚙️ General Instructions
+
+To execute the IRAS-IoT algorithm, a Python IDE is required, along with essential libraries such as tensorflow.keras.models, shutil, and paramiko.
+
+System tools like Sysstat and Powertop (Linux) were used to measure key metrics including CPU usage and power consumption.
 
