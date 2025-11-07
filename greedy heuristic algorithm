@@ -1,0 +1,26 @@
+
+def analyzer(device_list):
+
+  #Analyzing the device with the lowest % of idle CPU
+  worst_cpu_list = min(device_list.items(), key=operator.itemgetter(1))[0]
+  print("The device with the least available CPU resources:", worst_cpu_list)
+  worst_cpu_choice = device_list[worst_cpu_list][0]
+  ip_worst_device = device_list[worst_cpu_list][1]
+  
+  # Analyzing the device with the highest % of idle CPU
+  best_cpu_list = max(device_list.items(), key=operator.itemgetter(1))[0]
+  best_cpu_choice = device_list[best_cpu_list][0]
+  print("The best device to allocate the container is:", best_cpu_list)
+  ip_best_device = device_list[best_cpu_list][1]
+  
+  # Analyzing the device with the lowest battery percentage
+  worst_battery_list = min(device_list.items(), key=operator.itemgetter(1))[2]
+  print("The device with the lowest available battery level:", worst_battery_list)
+  worst_battery_choice = device_list[worst_battery_list][2]
+  ip_worst_device_battery = device_list[worst_battery_list][1]
+  
+  # Analyzing the device with the highest battery percentage
+  best_battery_list = max(device_list.items(), key=operator.itemgetter(1))[2]
+  best_battery_choice = device_list[best_battery_list][2]
+  print("The best device to allocate the container based on battery is:", best_battery_list)
+  ip_best_device_battery = device_list[best_battery_list][1]
