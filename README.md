@@ -1,4 +1,4 @@
-# 🌐 rasiot
+# 🌐 IRAS-IoT
 
 This repository describes the **IRAS-IoT** solution and the organisation of its directories.
 
