@@ -37,18 +37,24 @@ Contains the **120 experiment rounds**, divided into:
 - ☁️✅ **With_cloud_With_IRAS-IoT** → 30 rounds in a Fog-Cloud environment, IRAS-IoT enabled.  
 
 
-🧪 04 - mlp_testing_algorithm
+🧪 05 - mlp_testing_algorithm
 
 This directory includes the algorithm used to test the previously trained MLP model, aiming to evaluate the model’s accuracy and predictive performance.
 
-🏋️‍♂️ 05 - mlp_training_algorithm
+🏋️‍♂️ 06 - mlp_training_algorithm
 
 This directory includes the algorithm used to train the MLP model, selecting and processing the appropriate training data.
 
 
-⚡ 06 - workload_script
+⚡ 07 - workload_script
 
 Contains the scripts used to emulate workload generation during container creation and execution.
+
+🧭 08 - greedy_heuristic_algorithm
+
+Contains part the greedy heuristic algorithm used during the experimental phase to generate the dataset for training and testing the MLP model.
+This algorithm applies a greedy decision logic to select the best and worst Fog devices based on CPU utilisation and battery level, triggering container migrations between devices as part of its decision process. These migrations are performed locally, without considering global optimisation, providing the empirical data later used to train the neural network model.
+
 
 ⚙️ General Instructions
 
